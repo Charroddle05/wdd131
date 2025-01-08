@@ -14,12 +14,12 @@ body {
   }
   
   header {
-    background-color: #f8f8f8;
-    border-bottom: 1px solid #ddd;
+    background-color: #ffa9bc;
+    border-bottom: 1px solid #ffa8bb;
   }
   
   nav {
-    background-color: rgb(190, 216, 164);
+    background-color: rgb(255, 172, 188);
     padding: 1px;
   }
   
@@ -54,14 +54,14 @@ body {
   .card {
     margin-top: 20px;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #ffcbe5;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color: #ffdee2;
   }
   
   footer {
     margin-top: 20px;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #dddd;
     padding-top: 10px;
     text-align: center;
   }
