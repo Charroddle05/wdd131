@@ -6,7 +6,7 @@
 }
 
 header {
-    background-color: rgb(86, 19, 148);
+    background-color: rgb(255, 114, 213);
     color: #333;
     padding: 10px 20px;
 	display: flex;
@@ -84,7 +84,7 @@ h2 a{
 
 h2 {
 	font-size: 1.2rem;
-	color: navy;
+	color: rgb(238, 170, 255);
 	text-align: left;
 	margin: 1rem;
     text-align: center;
@@ -101,7 +101,7 @@ main {
 }
 
 footer {
-    background-color: #333;
+    background-color: #ff6edb;
     color: white;
     text-align: center;
     padding: 10px;
