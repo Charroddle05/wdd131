@@ -1,0 +1,32 @@
+@media screen and (min-width: 600px) {
+    nav ul {
+      display: flex !important; /* Forçar a exibição em visualizações maiores */
+      flex-direction: row !important;
+      gap: 20px;
+      justify-content: center;
+      max-width: 640px;
+      margin: 1rem auto;
+      align-items: center;
+    }
+    header {
+      display: flex;
+      justify-content: center !important;
+    }
+  
+    nav ul li {
+      margin: 0 15px;
+    }
+  
+    #hamburger {
+      display: none; /* Ocultar o botão de menu hambúrguer em visualizações maiores */
+    }
+  
+    main {
+      max-width: 1200px;
+      margin: auto;
+    }
+    .temple-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
