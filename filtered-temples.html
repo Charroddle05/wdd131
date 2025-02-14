@@ -1,78 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple Album</title>
-    <meta name="author" content="Charlotte Acosta">
-    <meta name="description" content="TEMPLES | WDD131">
-    <link rel="stylesheet" href="styles/temples.css">
-    <link rel="stylesheet" href="styles/temples-large.css">
-    <script src="scripts/temples.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Vitor Rodrigues Sampaio Pinto" />
+    <meta
+      name="description"
+      content="Using Javascript arrays and for loops to filter temples"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles/filtered-temples.css" />
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" />
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/filtered-temples.js"></script>
+    <title>WDD 131 - W02 Assignment: Picture Album</title>
+  </head>
+  <body>
     <header>
-        <h1>Temple Album</h1>
-        <button id="menu"></button>
-        <nav class="navigation">
-            <a href="#" class="active">Home</a>
-            <a href="#">Old</a>
-            <a href="#">New</a>
-            <a href="#">Large</a>
-            <a href="#">Small</a>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Old</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Large</a></li>
+          <li><a href="#">Small</a></li>
+        </ul>
+        <button id="hamburger">&#9776;</button>
+      </nav>
     </header>
-
     <main>
-        <h2><a href="temples.html">Home</a></h2><br>
-        <div class="temple-grid">
-            <figure class="figure">
-                <img src="images/temple1.jpg" alt="Temple 1" class="img">
-                <figcaption>Denver, Colorado</figcaption>
-            </figure>
-            <figure class="figure">
-                <img src="images/temple2.jpg" alt="Temple 2" class="img">
-                <figcaption>Houston, Texas</figcaption>
-            </figure>
-            <figure class="figure">
-                <img src="images/temple3.jpg" alt="Temple 3" class="img">
-                <figcaption>Idaho, Falls</figcaption>
-            </figure>
-            <figure class="figure">
-                <img src="images/temple4.jpg" alt="Temple 4" class="img">
-                <figcaption>Salt Lake City, Utah</figcaption>
-            </figure>
-            <figure class="figure">
-                <img src="images/temple5.jpg" alt="Temple 5" class="img">
-                <figcaption>Oakland, Temple</figcaption>
-            </figure>
-            <figure class="figure">
-                <img src="images/temple6.jpg" alt="Temple 6" class="img">
-                <figcaption>Phoenix, Arizona</figcaption>
-            </figure>
-            <figure class="figure">
-                <img src="images/temple7.jpg" alt="Temple 7" class="img">
-                <figcaption>Orlando, Florida</figcaption>
-            </figure>
-            <figure class="figure">
-                <img src="images/temple8.jpg" alt="Temple 8" class="img">
-                <figcaption>Mexico City, Mexico</figcaption>
-            </figure>
-            <figure class="figure">
-                <img src="images/temple9.jpg" alt="Temple 9" class="img">
-                <figcaption>Torreon, Mexico</figcaption>
-            </figure>
-        </div>
+      <h2>Home</h2>
+
+      <div id="templeContainer" class="temple-container">
+        <!-- Temple cards will be dynamically inserted here -->
+      </div>
     </main>
-    
     <footer>
-        <p>
-            &copy; <span id="currentyear"></span> Charlotte Acosta Houston, TX
-        </p>
-        <p id="lastModified"></p>
+      <p>
+        &copy; <span id="currentyear"></span> Vitor Sampaio, Leiria, Portugal
+      </p>
+      <p id="lastModified"></p>
     </footer>
-</body>
+  </body>
 </html>
