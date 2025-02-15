@@ -1,52 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Charlotte Acosta" />
-    <meta
-      name="description"
-      content="Using Javascript arrays and for loops to filter temples"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="styles/filtered-temples.css" />
-    <link rel="stylesheet" href="styles/filtered-temples-large.css" />
-    <script defer src="scripts/getdates.js"></script>
-    <script defer src="scripts/filtered-temples.js"></script>
-    <title>WDD 131 - W04 Assignment: Picture Album</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temple Album</title>
+    <meta name="author" content="Murilo Hernandes">
+    <meta name="description" content="Temple Album page filtered">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-        <h1 class="nameHeader">Temple Album</h1>
-        <button id="menu" title="Menu"></button>
-        <nav class="navigation">        
-          <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Old</a></li>
-          <li><a href="#">New</a></li>
-          <li><a href="#">Large</a></li>
-          <li><a href="#">Small</a></li>
-        </ul>
-        <button id="hamburger">&#9776;</button>
+      <h1 class="title">Temple Album</h1>
+      <nav class="navigation">
+        <a id="home" href="#">Home</a>
+        <a id="old" href="#">Old</a>
+        <a id="new" href="#">New</a>
+        <a id="large" href="#">Large</a>
+        <a  id="small" href="#">Small</a>
       </nav>
+      <button type="button" id="menu" aria-label="Drop down menu for the temple filters"></button>
     </header>
     <main>
       <h2>Home</h2>
-
-      <div id="templeContainer" class="temple-container">
-        <!-- Temple cards will be dynamically inserted here -->
-      </div>
+      <div class="temples-container"></div>
     </main>
     <footer>
-      <p>
-        &copy; <span id="currentyear"></span> Charlotte Acosta Houston, TX
-      </p>
-      <p id="lastModified"></p>
+      <span id="currentYear"></span>
+      <span id="lastModified"></span>
     </footer>
   </body>
 </html>
