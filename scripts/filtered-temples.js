@@ -1,5 +1,5 @@
 const today = new Date();
-document.getElementById("currentYear").innerHTML = `©️ ${today.getFullYear()} | Murilo Luiz Hernandes | Idaho`;
+document.getElementById("currentYear").innerHTML = `©️ ${today.getFullYear()} | Charlotte Acosta | Houston`;
 document.querySelector("#lastModified").textContent = `Last Modification: ${document.lastModified}`;
 
 const hamButton = document.querySelector("#menu");
