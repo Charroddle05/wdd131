@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="Product Review Form">
+    <meta name="author" content="Andrew Mogbeyiromore">
+    <!-- STYLE SHEETS -->
+    <link href="styles/form.css" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header><h1>Product Review</h1></header>
+
+    <form action="review.html" method="get">
+        <!-- Product Name Field -->
+        <label for="product">Product Name:</label>
+        <select id="product" name="product" required>
+            <option value="" disabled selected>Choose a Product ...</option>
+            <!-- Options will be dynamically populated by JavaScript -->
+        </select>
+      
+        <!-- Overall Rating (Stars) -->
+        <label>Overall Rating:</label>
+        <div id="rating">
+            <div class="star-rating">
+                <input type="radio" id="star1" name="rating" value="1" required>
+                <label for="star1">☆</label>
+            </div>
+            <div class="star-rating">
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">☆☆</label>
+            </div>
+            <div class="star-rating">
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">☆☆☆</label>
+            </div>
+            <div class="star-rating">
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">☆☆☆☆</label>
+            </div>
+            <div class="star-rating">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">☆☆☆☆☆</label>
+            </div>
+        </div>
+        
+        <!-- Date of Installation -->
+        <label for="installationDate">Date of Installation:</label>
+        <input type="date" id="installationDate" name="installationDate" required>
+      
+        <!-- Useful Features (Checkboxes) -->
+        <label>Which features of the product did you find useful?<br>(Check all that apply)</label>
+        <div class="checkbox-group">
+            <div class="checkbox-item">
+                <input type="checkbox" id="feature1" name="features" value="feature1">
+                <label for="feature1">Durability</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="feature2" name="features" value="feature2">
+                <label for="feature2">Ease of use</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="feature3" name="features" value="feature3">
+                <label for="feature3">Performance</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="feature4" name="features" value="feature4">
+                <label for="feature4">Design</label>
+            </div>
+        </div>
+        
+        <!-- Written Review -->
+        <label for="review">Written Review<span class="optional">(Optional)</span></label>
+        <textarea id="review" name="review" rows="4" cols="50"></textarea>
+      
+        <!-- User Name -->
+        <label for="username">Your Name<span class="optional">(Optional)</span></label>
+        <input type="text" id="username" name="username">
+      
+        <!-- Submit Button -->
+        <input type="submit" value="Post Review">
+    </form>
+
+        <footer>
+            <p>&copy; <span id="2024"></span> Andrew Mogbeyiromore, Nigeria.</p>
+            <p id="lastModified"></p>
+        </footer>
+        </body>
+        </html>
