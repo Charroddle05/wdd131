@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - FitPro Wellness</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/wellness.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Get in Touch</h2>
+            <form id="contact-form" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Andrew Mogbeyiromore, Nigeria.</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        // Automatically update the footer with the current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+
+        // Simple form validation and redirection
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            if (!name || !email || !message) {
+                alert("Please fill out all required fields.");
+                e.preventDefault(); // Prevent form submission if validation fails
+            } else {
+                // Redirect to thank-you page upon successful form submission
+                e.preventDefault(); // Prevent default form submission behavior
+                window.location.href = 'contactsuccess.html'; // Redirect to thank-you page
+            }
+        });
+    </script>
+
+</body>
+</html>
