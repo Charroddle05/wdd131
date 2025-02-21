@@ -15,7 +15,7 @@ body {
 
 /* Header Styles */
 header {
-    background: #0066cc;
+    background: #6fadeb;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -106,7 +106,7 @@ section {
 }
 
 section h2 {
-    color: #0066cc;
+    color: #6fadeb;
     margin-bottom: 10px;
 }
 
@@ -122,7 +122,7 @@ section img {
 footer {
     text-align: center;
     padding: 20px;
-    background: #0066cc;
+    background: #6fadeb;
     color: white;
     margin-top: 20px;
 }
